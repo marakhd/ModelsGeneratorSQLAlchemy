@@ -1,0 +1,91 @@
+* {
+    font-family: "Roboto", sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+body {
+    background: #bdc3c7;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    .main {
+        width: max-content;
+        input[type="text"], textarea {
+            width: 100%;
+            padding: 10px 15px;
+            border: 2px solid #8e44ad;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: border-color 0.3s, box-shadow 0.3s;
+            &:focus {
+                border-color: #9b59b6;
+                box-shadow: 0 0 10px rgba(155, 89, 182, 0.5);
+                outline: none;
+            }
+        }
+        button {
+            width: 100%;
+            background: linear-gradient(45deg, #8e44ad, #9b59b6);
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: all 2s ease;
+            &:hover {
+                background: linear-gradient(45deg, #9b59b6, #8e44ad);
+                transform: scale(1.05);
+            }
+            &:active {
+                transform: scale(1);
+            }
+        }
+        #btn_submit {
+            background-color: #4CAF50; /* Зеленый фон */
+            border: none;              /* Без границ */
+            color: white;              /* Белый текст */
+            padding: 12px 24px;        /* Внутренние отступы */
+            text-align: center;        /* Выравнивание текста по центру */
+            text-decoration: none;     /* Без подчеркивания */
+            display: inline-block;     /* Встроенный блочный элемент */
+            font-size: 16px;           /* Размер текста */
+            margin: 4px 2px;           /* Внешние отступы */
+            cursor: pointer;           /* Курсор-указатель при наведении */
+            border-radius: 12px;       /* Скругленные углы */
+            transition: background-color 0.3s, box-shadow 0.3s; /* Плавный переход для фона и тени */
+            &:hover {
+                background-color: #45a049; /* Темный зеленый фон при наведении */
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Тень при наведении */
+            }
+        }
+        #output_box {
+            position: relative;
+            textarea {
+                width: 600px;
+                min-height: 150px;
+                height: 350px;
+                resize: vertical;
+                overflow: auto;
+            }
+            #btn_copy {
+                cursor: pointer;
+                position: absolute;
+                right: 19px;
+                top: 10px;
+            }
+        }
+    }
+    
+}

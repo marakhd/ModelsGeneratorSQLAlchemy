@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Генератор моделей для SqlAlchemy</title>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <link rel="icon" href="/favicon.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="/eel.js"></script>
+    <script src="/main.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script> -->
+</head>
+<body>
+    <main>
+        <div class="main">
+            <div id="url_div">
+                <input id="url_input" type="text" placeholder="URL Базы Данных">
+                <br>
+                <small id="error"></small>
+            </div>
+            <button id="btn_submit">Получить модели</button>
+            <div id="output_box">
+                <textarea name="output" id="output" readonly placeholder="Вывод:"></textarea>
+                <div><a id="btn_copy"><img src="copy.png" width="25px" alt="Копировать"/></a></div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
